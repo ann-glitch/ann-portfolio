@@ -2,7 +2,7 @@ import React from "react";
 import "./App.scss";
 
 import { Navbar } from "./components";
-import { About, Header, Footer, Testimonials, Skills, Work } from "./container";
+import { About, Header, Footer, Skills, Work } from "./container";
 
 const App = () => {
   return (
@@ -12,7 +12,6 @@ const App = () => {
       <About />
       <Work />
       <Skills />
-      {/* <Testimonials /> */}
       <Footer />
     </div>
   );

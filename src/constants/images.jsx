@@ -36,6 +36,11 @@ import skype from "../assets/skype.png";
 import spotify from "../assets/spotify.png";
 import tales from "../assets/tales.png";
 import codex from "../assets/codex.png";
+import mongodb from "../assets/mongodb.png";
+import newsai from "../assets/newsai.png";
+import redis from "../assets/redis.png";
+import routercoverage from "../assets/routercoverage.png";
+import postgresql from "../assets/postgresql.png";
 
 export default {
   email,
@@ -72,4 +77,9 @@ export default {
   spotify,
   tales,
   codex,
+  mongodb,
+  newsai,
+  redis,
+  routercoverage,
+  postgresql,
 };
