@@ -42,7 +42,7 @@ const Work = () => {
       </h2>
 
       <div className="app__work-filter">
-        {["Node+Express+Mongo", "React", "MERN", "All"].map((item, index) => (
+        {["Javascript", "Node", "React", "MERN", "All"].map((item, index) => (
           <div
             key={index}
             onClick={() => handleWorkFilter(item)}
@@ -104,7 +104,7 @@ const Work = () => {
               </p>
 
               <div className="app__work-tag app__flex">
-                <p className="p-text">{work.tags}</p>
+                <p className="p-text">{work.tags[0]}</p>
               </div>
             </div>
           </div>
