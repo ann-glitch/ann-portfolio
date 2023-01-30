@@ -1,47 +1,30 @@
-import React, { useState, useEffect } from "react";
 import "./About.scss";
 
-import { urlFor, client } from "../../client";
-import { motion } from "framer-motion";
 import { AppWrap, MotionWrap } from "../../wrapper";
 
 const About = () => {
-  const [abouts, setAbouts] = useState([]);
-
-  useEffect(() => {
-    const query = '*[_type == "abouts"]';
-
-    client.fetch(query).then((data) => {
-      setAbouts(data);
-    });
-  }, []);
-
   return (
     <>
-      <h2 className="head-text">
-        The function of good software<span> Is to make the complex</span>
-        <br />
-        appear<span> to be simple.</span>
+      <h2 className="head-text header">
+        About<span> Me</span>
       </h2>
 
       <div className="app__profiles">
-        {abouts.map((about, index) => (
-          <motion.div
-            whileInView={{ opacity: 1 }}
-            whileHover={{ scale: 1.1 }}
-            transition={{ duration: 0.5, type: "tween" }}
-            className="app__profile-item"
-            key={about.title + index}
-          >
-            <img src={urlFor(about.imgUrl)} alt={about.title} />
-            <h2 className="bold-text" style={{ marginTop: 20 }}>
-              {about.title}
-            </h2>
-            <p className="p-text" style={{ marginTop: 10 }}>
-              {about.description}
-            </p>
-          </motion.div>
-        ))}
+        <p className="p-text para">
+          A curious and self-starter developer with a year of experience
+          building backend elements and connecting applications to web-based
+          services. Learning new things and having new experiences are one of my
+          obsessions. I always tell my sister that if NASA ever needed
+          volunteers to investigate a new world they discovered, I would sign
+          up. (NASA if you are reading this, my offer is still very much open
+          hehe). I pride myself in my excellent analytical and problem-solving
+          skills and I enjoy collaborative work in a dynamic, challenging and
+          team-based environment.
+          <br />
+          <br />
+          When I'm not coding, I'm definitely sleeping or watching a murder
+          documentary.
+        </p>
       </div>
     </>
   );
