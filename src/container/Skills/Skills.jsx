@@ -25,7 +25,7 @@ const Skills = () => {
 
   return (
     <>
-      <h2 className="head-text">Skills & Experience.</h2>
+      <h2 className="head-text">Technical Skills.</h2>
 
       <div className="app__skills-container">
         <motion.div className="app__skills-list">
@@ -34,19 +34,17 @@ const Skills = () => {
               whileInView={{ opacity: [0, 1] }}
               transition={{ duration: 0.5 }}
               className="app__skills-item app__flex"
-              key={skill.name}
-            >
+              key={skill.name}>
               <div
                 className="app__flex"
-                style={{ backgroundColor: skill.bgColor }}
-              >
+                style={{ backgroundColor: skill.bgColor }}>
                 <img src={urlFor(skill.icon)} alt={skill.name} />
               </div>
               <p className="p-text">{skill.name}</p>
             </motion.div>
           ))}
         </motion.div>
-        <div className="app__skills-exp">
+        {/* <div className="app__skills-exp">
           {experiences.map((experience) => (
             <motion.div className="app__skills-exp-item" key={experience.year}>
               <div className="app__skills-exp-year">
@@ -79,7 +77,7 @@ const Skills = () => {
               </motion.div>
             </motion.div>
           ))}
-        </div>
+        </div> */}
       </div>
     </>
   );
