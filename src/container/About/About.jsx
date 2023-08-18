@@ -11,19 +11,24 @@ const About = () => {
 
       <div className="app__profiles">
         <p className="p-text para">
-          A curious and self-starter developer with a year of experience
-          building backend elements and connecting applications to web-based
-          services. Learning new things and having new experiences are one of my
-          obsessions. I always tell my sister that if NASA ever needed
-          volunteers to investigate a new world they discovered, I would sign
-          up. (NASA if you are reading this, my offer is still very much open
-          hehe). I pride myself in my excellent analytical and problem-solving
-          skills and I enjoy collaborative work in a dynamic, challenging and
-          team-based environment.
+          I am a versatile and inquisitive developer proficient in both front
+          and back-end development. With a constant thirst for learning and a
+          natural inclination for problem-solving, I excel in collaborative,
+          dynamic team settings. My strong analytical skills enable me to break
+          down intricate problems and come up with creative solutions. This
+          showcases how dedicated I am to pushing things forward.
           <br />
           <br />
-          When I'm not coding, I'm definitely sleeping or watching a murder
-          documentary.
+          My enthusiasm for exploration extends beyond technology. A testament
+          to this is my statement to my sister that I would readily volunteer
+          for NASA's exploratory missions to new worlds, an offer that remains
+          open. This eagerness to embrace the unknown mirrors my proactive
+          approach to professional growth. Whether contributing within a team or
+          working independently, I am dedicated to achieving impactful results.
+          <br />
+          <br />
+          Away from the keyboard, I find solace in restful slumber or watching
+          murder documentaries to keep my curiosity alive.
         </p>
       </div>
     </>
